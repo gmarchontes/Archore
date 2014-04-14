@@ -25,7 +25,6 @@ import objects.Objet.ObjTemplate;
 import objects.Personnage.Group;
 import objects.Personnage.Stats;
 import objects.Sort.SortStats;
-
 import common.*;
 import common.World.*;
 
@@ -3665,6 +3664,7 @@ public class Fight {
 			TEAM1.addAll(_team1.values());
 			TEAM2.addAll(_team0.values());
 		}
+		@SuppressWarnings("unused")
 		int TEAM2lvl = 0;
 		Personnage curp = null;
 		Personnage curp2 = null;

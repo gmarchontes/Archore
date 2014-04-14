@@ -7,9 +7,9 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import java.net.InetAddress;
 import java.util.ArrayList;
+
 import common.Consolex;
 import common.Consolex.ConsoleColorEnum;
-
 import realm.RealmServer;
 
 public class Ancestra {
@@ -189,6 +189,7 @@ public class Ancestra {
 	private static void loadConfiguration() {
 		try {
 			
+			@SuppressWarnings("resource")
 			BufferedReader config = new BufferedReader(new FileReader(
 					CONFIG_FILE));
 			String line = "";
